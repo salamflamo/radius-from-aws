@@ -1,0 +1,30 @@
+
+{% extends "base.html" %}
+{% block title %}S3 Bucket List{% endblock %}
+
+{% block content %}
+<div class="row">
+      <div class="col-md-12">
+        <div class="jumbotron">
+          <form method="POST" action="/upload_files_to_s3" enctype="multipart/form-data">
+          <p id="status">Please select a file</p>
+          <input id="uploadImage" type="file" name="file" required onchange="PreviewImage()">
+          <p></p><img id="uploadPreview" style="width: 200px; height: 200px;" /></p>
+           <input type="submit" class="btn btn-danger">
+          </form>
+      </table>
+        </div>
+      </div>
+  </div>
+  <script type="text/javascript">
+      function PreviewImage() {
+          var oFReader = new FileReader();
+          oFReader.readAsDataURL(document.getElementById("uploadImage").files[0]);
+
+          oFReader.onload = function (oFREvent) {
+              document.getElementById("uploadPreview").src = oFREvent.target.result;
+          };
+      };
+
+  </script>
+{% endblock %}
