@@ -9,21 +9,21 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="description" content="">
+    <meta name="description" content="Radius Game - A cosmic adventure in space">
     <meta name="author" content="">
     <!--[if IE]>
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <![endif]-->
-    <title>Application Logs</title>
+    <title>Radius Game - Space Adventure</title>
     <!--REQUIRED STYLE SHEETS-->
     <!-- BOOTSTRAP CORE STYLE CSS -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- FONTAWESOME STYLE CSS -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- CUSTOM STYLE CSS -->
     <link href="style.css" rel="stylesheet" />
     <!-- GOOGLE FONT -->
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap' rel='stylesheet'>
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -50,38 +50,93 @@
     <div class="container" id="home">
         <div class="row text-center">
             <div class="col-md-12">
-                <h1 class="head-main"> <i class="fab fa-aws fa-2x"></i></h1>
+                <h1 class="head-main">
+                    <i class="fas fa-rocket"></i>
+                    <span class="ms-3">Radius Game</span>
+                </h1>
+                <p class="lead text-muted">Embark on a cosmic adventure through the stars</p>
             </div>
         </div>
     </div>
     <!--End Header section  -->
 
     <!--Game Section-->
-    <section class=" color-light">
+    <section class="color-light">
         <div class="container">
-          <div class="row text-center">
-            <div class="col-md-12">
-              <h2>Play Radius</h2>
-    
-              <iframe id="inlineFrameExample" title="Inline Frame Example" width="825" height="625"
-                src="radius/index.html"></iframe>
-    
+            <div class="row text-center">
+                <div class="col-md-12">
+                    <h2><i class="fas fa-gamepad me-2"></i>Launch Game</h2>
+                    <button class="play-button">
+                        <i class="fas fa-play me-2"></i>Start Mission
+                    </button>
+                    <div class="game-container">
+                        <iframe id="inlineFrameExample" 
+                                title="Radius Game" 
+                                width="825" 
+                                height="625"
+                                src="radius/index.html">
+                        </iframe>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </section>
+    </section>
     <!--End Game Section-->
 
+    <!--Features Section-->
+    <section class="container mt-5">
+        <div class="row text-center">
+            <div class="col-md-4">
+                <div class="feature-box">
+                    <i class="fas fa-star fa-3x mb-3"></i>
+                    <h3>Cosmic Challenge</h3>
+                    <p>Navigate through the stars with increasing difficulty</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="feature-box">
+                    <i class="fas fa-meteor fa-3x mb-3"></i>
+                    <h3>Quick Missions</h3>
+                    <p>Perfect for short space adventures</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="feature-box">
+                    <i class="fas fa-satellite fa-3x mb-3"></i>
+                    <h3>Universal Access</h3>
+                    <p>Play across the galaxy on any device</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End Features Section-->
+
     <!--footer Section -->
-    <div class="for-full-back " id="footer">
-        CSS Template from <a href="https://www.free-css.com/free-css-templates/page203/image-less">Free CSS</a>
-    </div>
+    <footer class="for-full-back" id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="footer-content">
+                        <div class="social-icons">
+                            <a href="#" class="me-3"><i class="fab fa-facebook"></i></a>
+                            <a href="#" class="me-3"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="me-3"><i class="fab fa-instagram"></i></a>
+                        </div>
+                        <div class="footer-text">
+                            <p>© 2024 Radius Game. All rights reserved.</p>
+                            <p class="small">Made with <i class="fas fa-heart"></i> for space explorers</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
     <!--End footer Section -->
     <!-- JAVASCRIPT FILES PLACED AT THE BOTTOM TO REDUCE THE LOADING TIME  -->
     <!-- CORE JQUERY  -->
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
     <!-- BOOTSTRAP CORE SCRIPT   -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <!-- CUSTOM SCRIPTS -->
     <script src="script.js"></script>
 
